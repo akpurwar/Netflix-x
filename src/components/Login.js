@@ -43,7 +43,7 @@ const name = useRef(null)
 }).catch((error) => {
    seterrormessage(error.message)
 });
-    navigate("/browse")
+  
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -58,9 +58,8 @@ const name = useRef(null)
     const user = userCredential.user;
    
     
-    console.log(user)
-    navigate("/browse")
-    // ...
+  
+
   })
   .catch((error) => {
     const errorCode = error.code;
